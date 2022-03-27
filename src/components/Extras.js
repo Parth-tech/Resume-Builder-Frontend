@@ -26,8 +26,8 @@ class Extras extends Component {
         this.props.nextStep();
         const data = this.props.values;
 
-        axios.post('/create-pdf', data)
-            .then(() => axios.get('fetch-pdf', { responseType: 'blob' }))
+        axios.post('http://resume-builder-nodebackend.herokuapp.com/create-pdf', data)
+            .then(() => axios.get('http://resume-builder-nodebackend.herokuapp.com/fetch-pdf', { responseType: 'blob' }))
             .then((res) => {
                 const pdfBlob = new Blob([res.data], { type: 'application/pdf' });
 
