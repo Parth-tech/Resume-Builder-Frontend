@@ -54,7 +54,7 @@ class UserForm extends Component {
     // }
 
     state = {
-        step: 5,
+        step: 1,
         step1Continue:false,
         step2Continue:false,
         step3Continue:false,
