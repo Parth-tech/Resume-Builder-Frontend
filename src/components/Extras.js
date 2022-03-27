@@ -8,7 +8,7 @@ import { saveAs } from 'file-saver';
 class Extras extends Component {
 
     state={
-        downloadDisabled:false,
+        downloadDisabled:true,
         hobbies:'',
         hobbies_helperText:'',
         lang:'',
